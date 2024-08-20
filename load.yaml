@@ -1,0 +1,18 @@
+execution:
+  - concurrency: 1000    # Maximum number of concurrent users
+    hold-for: 5m         # Duration to hold at maximum concurrency
+    ramp-up: 2m          # Time to ramp up to maximum concurrency
+    scenario: basic_test # Reference to the scenario to use
+
+scenarios:
+  basic_test:
+    requests:
+      - http://127.0.0.1:43029/  # URL to load test; ensure this is the correct IP and port
+    think-time: 1s  # Time to wait between requests, simulating think time of a real user
+reporting:
+  - module: console  # Outputs results to the console
+  - module: junit-xml
+    filename: results.xml  # Saves results as a JUnit XML report
+  - module: final-stats
+    summary: true      # Displays a summary of final statistics
+    percentiles: true  # Includes percentile calculations in the summary

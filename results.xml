@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="sample_labels" package_name="bzt">
+    <testcase classname="bzt-8737673840740" name="http://127.0.0.1:43029/">
+      <error message="Non HTTP response message: Read timed out" type="Error">Non HTTP response message: Read timed out
+(status code is Non HTTP response code: java.net.SocketTimeoutException)
+(total errors of this type: 1877)</error>
+      <error message="Non HTTP response message: 127.0.0.1:43029 failed to respond" type="Error">Non HTTP response message: 127.0.0.1:43029 failed to respond
+(status code is Non HTTP response code: org.apache.http.NoHttpResponseException)
+(total errors of this type: 255)</error>
+      <error message="Non HTTP response message: Connection reset" type="Error">Non HTTP response message: Connection reset
+(status code is Non HTTP response code: java.net.SocketException)
+(total errors of this type: 11420)</error>
+    </testcase>
+  </testsuite>
+</testsuites>
