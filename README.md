@@ -1,7 +1,7 @@
 #Task
-Set up a local Kubernetes Cluster on my machine
-Deploy and App to the cluster
-Send some load/traffic to the app
+Set up a local Kubernetes Cluster on my machine,
+Deploy and App to the cluster,
+Send some load/traffic to the app,
 Devise a solution to visualize the traffic sent.
 
 
@@ -16,9 +16,9 @@ Devise a solution to visualize the traffic sent.
 
 #Overview of the deployment
 •	Install all dependencies i.e minikube, docker, java, python, taurus.
-•	A python flask app was deployed “app.py” ensuring endpoint exposed to Prometheus for metrics. The python app is a simple app that prints “Hello World”
+•	A python flask app was deployed “app.py” ensuring endpoint exposed to Prometheus for metrics. The python app is a simple app that prints “Hello World”.
 •	A dockerfile was created. The docker file pulls a base python image from official python.
-•	A requirement.txt file containing the dependencies to run the application
+•	A requirement.txt file containing the dependencies to run the application.
 •	Build docker image using Docker.
 •	For the app deployment, a terraform script was written for automation of the process.
 •	For Prometheus the scrape metrics, we needed to create configmap, deployment & service which was also included in the terraform script.
