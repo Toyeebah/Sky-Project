@@ -5,7 +5,7 @@ provider "kubernetes" {
 # Flask App Deployment
 resource "kubernetes_deployment" "flask_app" {
   metadata {
-    name = "flask-app"
+    name = "flask-appp"
   }
 
   spec {
